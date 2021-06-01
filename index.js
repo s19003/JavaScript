@@ -6,5 +6,5 @@ function onButtonClick () {
 }
 
 app.get('/index', (req, res) => {
-  res.write('Hello World!!')
+  console.log('Get')
 })
