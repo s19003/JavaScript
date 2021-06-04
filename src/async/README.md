@@ -2,6 +2,6 @@
 
 <pre>
 async
-  ┠ async01.js -- 非同期処理の動きを確認する
+  ┠ async01.js -- Promiseを使用する
   ┠
 </pre>
