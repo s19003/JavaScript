@@ -2,6 +2,6 @@
 
 <pre>
 async
-  ┠ async01.js -- Promiseを使用する
+  ┠ promise01.js -- Promiseを使用する
   ┠
 </pre>
