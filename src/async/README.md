@@ -1,4 +1,4 @@
-### Async(非同期処理)
+### Async(非同期)
 
 <pre>
 async
