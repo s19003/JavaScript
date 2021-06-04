@@ -1,6 +1,13 @@
 'use strict'
 
-// -- ①非同期処理でPromiseを使用しない場合
+/* 期待する出力
+Start
+Now Loading
+Finish
+*/
+
+// -- (1)非同期処理でPromiseを使用しない場合
+console.log('----- 非同期処理でPromiseを使用しない場合')
 console.log('Start')
 
 setTimeout(() => {
@@ -12,17 +19,12 @@ console.log('Finish')
 /* 出力
 Start
 Finish
-Now Loading -- 2秒後に出力
+Now Loading <-- 遅れて出力される
 */
 
-/* ↓ 下の様に出力したい
-Start
-Now Loading -- 2秒後に出力
-Finish
-*/
-
-// -- ②Promiseを使用する
+// -- (2)Promiseを使用した場合
 const promise = () => {
+  console.log('----- Promiseを使用した場合')
   console.log('Start')
   new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -34,4 +36,10 @@ const promise = () => {
   })
 }
 
-setTimeout(promise, 4000)
+setTimeout(promise, 5000)
+
+/* 出力
+Start
+Now Loading
+Finish
+*/
