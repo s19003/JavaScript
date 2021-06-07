@@ -2,7 +2,7 @@
 一定時間後に処理を行いたい
 *****/
 
-console.log(new Date().toLocaleDateString())
+console.log(new Date().toLocaleTimeString())
 
 const greet = () => {
   console.log('Hello')
