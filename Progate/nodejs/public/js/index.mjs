@@ -11,7 +11,6 @@ const tables = document.getElementById('list-ul')
 
 items.forEach(item => {
   const li = document.createElement('li')
-  console.log(item.name)
   li.innerHTML = `
   <span class="id-column">${item.id}</span>
   <span class="name-column">${item.name}</span>

@@ -1,7 +1,6 @@
 'use strict'
 
 import express from 'express'
-import mysql from 'mysql'
 
 const app = express()
 const port = 3000
@@ -16,20 +15,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/index', (req, res) => {
-  connection.query('SELECT * FROM items', (error, results) => {
-    console.log(results)
-    res.render('index.ejs')
-  })
-})
-
-/*****
-Mysqlと接続する
-*****/
-const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'root',
-  password: 'password',
-  database: 'list_app'
+  res.render('index.ejs')
 })
 
 app.listen(port) // -- サーバーを起動
