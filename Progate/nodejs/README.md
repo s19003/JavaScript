@@ -1,3 +1,3 @@
-### Progate-Nodejs
+## Progate-Nodejs
 
-06/07 - Nodejsレッスン1
+### 06/07 - Nodejsレッスン1
