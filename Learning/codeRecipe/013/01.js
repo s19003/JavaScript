@@ -2,18 +2,17 @@
 一定時間後に処理を行いたい
 *****/
 
-console.log(new Date().toLocaleTimeString())
+console.log('すぐに実行')
 
-const greet = () => {
-  console.log('Hello')
+const sample01 = () => {
+  console.log('1秒後')
 }
-setTimeout(greet, 3000) // -- 3秒後に実行
+setTimeout(sample01, 1000)
 
 setTimeout(() => {
-  console.log('World!!')
-}, 5000) // -- 5秒後に実行
+  console.log('3秒後')
+}, 3000)
 
-setTimeout(() => {
-  const date = new Date().toLocaleTimeString()
-  console.log(date)
-}, 7000) // -- 7秒後に実行
+const sample02 = setTimeout(() => {
+  console.log('5秒後')
+}, 5000)
