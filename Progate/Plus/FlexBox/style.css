@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+}
+
+ul {
+  list-style: none; /* liの●を削除 */
+  margin: 0;
+  padding: 60px 0; /* 上下60px 左右0 */
+  text-align: center; /* テキストをセンターに配置 */
+}
+
+.flex-list {
+  display: flex; /* 小要素を横並びにする */
+  flex-wrap: wrap; /* 折返しを許可する */
+}
+
+.flex-list li {
+  flex: auto; /* 幅をAutoにする */
+  width: 50%;
+}
+
+li {
+  color: white;
+  height: 80px;
+  line-height: 80px; /* テキストの間隔を決める(うーん...) */
+}
+
+.li1 {
+  background-color: #ffc562;
+}
+.li2 {
+  background-color: #a0c3f7;
+}
+.li3 {
+  background-color: #ff8db3;
+}
+.li4 {
+  background-color: #88e7ce;
+}
