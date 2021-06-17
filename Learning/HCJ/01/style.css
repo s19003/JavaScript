@@ -1,0 +1,15 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: all 3000ms 0s ease;
+  position:absolute;
+  left: -100px;
+  display:block;
+}
+
+.active {
+  width: calc(100% + 100px);
+  background: blue;
+  transition: all 3000ms 0s ease;
+}
