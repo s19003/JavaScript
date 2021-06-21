@@ -1,7 +1,16 @@
-const box = document.querySelector('.box')
+const content = document.querySelector('.content')
 const button = document.querySelector('.button')
-const ret = document.querySelector('.return')
 
 button.addEventListener('click', () => {
-  box.classList.toggle('active')
+  const p = document.createElement('p')
+  p.innerHTML = 'Hello World!!'
+  content.appendChild(p)
+
+  setTimeout(() => {
+    p.classList.add('p-right')
+  }, 0)
+
+  setTimeout(() => {
+    content.removeChild(p)
+  }, 20000)
 })
