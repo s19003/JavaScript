@@ -12,5 +12,5 @@ button.addEventListener('click', () => {
 
   setTimeout(() => {
     content.removeChild(p)
-  }, 20000)
+  }, 5000)
 })
