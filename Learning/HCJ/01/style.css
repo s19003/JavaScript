@@ -2,17 +2,22 @@
   margin: 0;
 }
 
+.content {
+  background-color: gray;
+  width: 800px;
+  height: 600px;
+}
+
 p {
   display: inline-block;
-  background-color: aqua;
+  color:white;
 
   position: relative;
   left: 100%;
 
-  transition: all 15000ms 0s linear;
+  transition: all 20000ms 0s linear;
 }
 
 .p-right {
-  background-color: burlywood;
-  transform: translateX(-2000px);
+  transform: translateX(-3000px);
 }
