@@ -1,0 +1,52 @@
+.screen {
+  background-color: black;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.comment {
+  color: white;
+  font-size: 24px;
+
+  /* ポジションを固定する */
+  position: absolute;
+
+  /* 文字の行間を調節する */
+  line-height: 1;
+
+  text-shadow: -1px -1px #000, 1px -1px #000, -1px 1px #000, 1px 1px #000;
+
+  animation-name: lane0;
+  animation-timing-function: linear;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes lane0 {
+  from {
+    transform: translate(1280px, 0);
+  }
+  to {
+    transform: translate(-1280px, 0);
+  }
+}
+
+@keyframes lane1 {
+  from {
+    transform: translate(640px, 25px);
+  }
+  to {
+    transform: translate(-1280px, 25px);
+  }
+}
+
+@keyframes lane3 {
+  from {
+    transform: translate(640px, 50px);
+  }
+  to {
+    transform: translate(-1280px, 50px);
+  }
+}
