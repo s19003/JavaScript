@@ -1,3 +1,7 @@
+// screen - スクリーン
+// button - ボタン(検証用)
+// text - Formテキスト(検証用)
+
 const screen = document.querySelector('.screen')
 const button = document.querySelector('.button')
 const text = document.querySelector('.text')
@@ -30,3 +34,10 @@ button.addEventListener('click', () => {
 
   console.log(test)
 })
+
+setInterval(() => {
+  const comment = document.createElement('span')
+  comment.innerHTML = 'Hello World!!'
+  comment.classList.add('comment')
+  screen.appendChild(comment)
+}, 2000)
