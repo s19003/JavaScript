@@ -1,0 +1,6 @@
+document.querySelector('.round1').innerHTML = Math.round(6.24)
+document.querySelector('.round2').innerHTML = Math.round(-6.24)
+document.querySelector('.ceil1').innerHTML = Math.ceil(6.24)
+document.querySelector('.ceil2').innerHTML = Math.ceil(-6.24)
+document.querySelector('.floor1').innerHTML = Math.floor(6.24)
+document.querySelector('.floor2').innerHTML = Math.floor(-6.24)
