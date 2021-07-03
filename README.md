@@ -1,7 +1,6 @@
-### JavaScript Learning Repository
+## Learn JS
 
-
-**.**<br>
-├> Learning -- 参考書などの自己学習リポジトリ<br>
-├> Progate -- オンライン学習サイト**Progate**の学習リポジトリ<br>
-
+```
+├ 01 <-- コードレシピ
+├ 02 <-- XXX
+```
