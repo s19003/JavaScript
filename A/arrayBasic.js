@@ -11,7 +11,7 @@ console.log('\nArray\t: ' + arrays)
  * 配列(Array)を作成する
  * Arrayコンストラクター
  */
-let sample = new Array(5)
+let other = new Array(5)
 
 // ============================== プロパティ(property) ==============================
 console.log('=============== プロパティ(property) ===============')
@@ -29,6 +29,13 @@ console.log('=============== メソッド(method) ===============')
  */
 let sliceArrays = arrays.slice()
 console.log('slice\t: ' + sliceArrays)
+
+/**
+ * start番目からend番目までの要素を抜き出す
+ * array.slice(start [, end])
+ */
+sliceArrays = arrays.slice(2, arrays.length)
+console.log('slice[2, length-1]\t: ' + sliceArrays)
 
 /**
  * 配列の末尾に要素を追加する
@@ -68,10 +75,37 @@ console.log('delete\t: ' + deleteArrays)
 /**
  * 他の配列と連結する
  */
-let preArrays = arrays.slice()
-let nextArrays = Array.from('ABCD')
-let concatArrays = preArrays.concat(nextArrays)
+let concatArrays = arrays.concat(Array.from('ABCD'))
 console.log('concat\t: ' + concatArrays)
+
+/**
+ * 各要素の値をseparatorで連結した文字列を返す
+ * array.join([separator])
+ */
+let joinArrays = arrays.join('/')
+console.log('join\t: ' + joinArrays)
+
+/**
+ * start番目からn個の要素を削除し、代わりの要素を埋め込む
+ * array.splice(start, n, e1, e2, ...)
+ */
+let spliceArrays = arrays.slice()
+spliceArrays.splice(1, 3, 'X', 'Y', 'Z')
+console.log('splice\t: ' + spliceArrays)
+
+/**
+ * 昇順にソート
+ */
+let sortArrays = arrays.slice()
+sortArrays.sort()
+console.log('sort\t: ' + sortArrays)
+
+/**
+ * 逆順にソート
+ */
+let reverseArrays = arrays.slice()
+reverseArrays.reverse()
+console.log('reverse\t: ' + reverseArrays)
 
 /**
  * 配列かどうか確認する
