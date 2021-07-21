@@ -18,7 +18,7 @@ const getRandom = (min, max) => {
 
 let container = new Array()
 const min = 0
-const max = 10
+const max = 99
 
 for (let i = 0; i < 1000; i++) {
   container.push(getRandom(min, max))
