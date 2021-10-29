@@ -25,7 +25,7 @@ console.log(`配列リテラル:${matrixArr}`)
 // The array literal notation [] is preferable. (no-array-constructor)
 // 配列リテラル表記[]が推奨されます。(Arrayコンストラクタは非推奨)
 // https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/Array
-emptyArr = Array(0)
+emptyArr = Array(3)
 console.log(`Array():[${emptyArr}]`)
 
 stringArr = Array('aaa', 'bbb', 'ccc')
@@ -46,7 +46,7 @@ numArr = Array.from([1, 2, 3])
 console.log(`Array.from():${numArr}`)
 
 // Map関数を使用する
-numArr = Array.from([1, 2, 3], x => x * x)
+numArr = Array.from([1, 2, 3], (x) => x * x)
 console.log(`Array.from():${numArr}`)
 
 // Array.of()メソッドを使用する
