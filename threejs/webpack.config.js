@@ -2,9 +2,9 @@ const path = require('path')
 
 module.exports = {
   mode: 'production',
-  entry: ['@babel/polyfill', './public/01/index.js'],
+  entry: ['@babel/polyfill', './public/index.js'],
   output: {
-    path: path.resolve(__dirname, './public/dist')
+    path: path.resolve(__dirname, './dist')
   },
   module: {
     rules: [
@@ -17,7 +17,16 @@ module.exports = {
             presets: ['@babel/preset-env']
           }
         }
+      },
+      {
+        test: /\.css/,
+        use: ['style-loader', { loader: 'css-loader', options: { url: false } }]
       }
     ]
-  }
+  },
+  devServer: {
+    static: 'dist',
+    open: true
+  },
+  cache: true
 }
