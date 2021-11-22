@@ -1,6 +1,6 @@
 ## THREE.WebGLRenderer クラス
 
-3D 空間のレンダリングを行います。
+3D 空間のレンダリングを行うクラスです。
 
 ```
 const renderer = new THREE.WebGLRenderer()
@@ -14,4 +14,13 @@ const renderer = new THREE.WebGLRenderer()
 ```
 const scene = new THREE.Scene()
 scene.add(obj)
+```
+
+## THREE.PerspectiveCamera クラス
+
+3D 空間を撮影するクラスです。<br>
+どの視点で撮影するのかの情報が必要となります。
+
+```
+const scene = new THREE.PerspectiveCamera(視野角, アスペクト比)
 ```
